@@ -59,6 +59,13 @@
   }
 }
 
+/* Change background attachment for IOS */
+@supports (-webkit-overflow-scrolling: touch) {
+  .service-banner-image {
+    background-attachment: scroll;
+  }
+}
+
 .contact-banner-image {
   background-image: url("/contact-banner.webp");
   background-size: cover;
