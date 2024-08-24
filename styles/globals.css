@@ -56,9 +56,9 @@
 /* Change background-attachment from fixed to scroll for iOS */
 @media screen and (max-width: 1023px) {
   .service-banner-image {
-    background-image: url("/banner-service-background-mobile.webp");
+    background-image: url("/banner-service-background-mobile.webp"); /* Added for iOS */
     background-position: 55% center;
-    background-attachment: scroll;
+    background-attachment: scroll; /* Added for iOS */
   }
 }
 
