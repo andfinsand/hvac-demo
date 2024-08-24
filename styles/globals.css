@@ -52,10 +52,13 @@
   background-attachment: fixed;
 }
 
-/* Offset background image for mobile */
+/* Use taller image resolution for iOS */
+/* Change background-attachment from fixed to scroll for iOS */
 @media screen and (max-width: 1023px) {
   .service-banner-image {
-    background-position: 70% center;
+    background-image: url("/banner-service-background-mobile.webp");
+    background-position: 55% center;
+    background-attachment: scroll;
   }
 }
 
