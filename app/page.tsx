@@ -1,13 +1,11 @@
 import Link from "next/link";
 import Image from "next/image";
-// import Navbar from "../components/Navbar"
 import PrimaryButton from "../components/buttons/PrimaryButton"
 import LayeredImages from "../components/LayeredImages"
 import ServiceCardSmall from "../components/ServiceCardSmall"
 import LazyMap from "../components/LazyMap"
 import ReviewCard from "../components/ReviewCard"
 import ContactBanner from "../components/ContactBanner"
-// import Footer from "../components/Footer"
 
 export default function Home() {
   return (
@@ -120,65 +118,55 @@ export default function Home() {
                 </div>
                 <LayeredImages />
               </div>
+
+              {/* Services container */}
+              <div className="flex flex-col self-center text-center w-full">
+                {/* Services */}
+                <div className="font-semibold tracking-wider z-10 mb-2">OUR SERVICES</div>
+                <h2 className="self-center text-[33px] xl:text-[45px] font-extrabold leading-tight z-10 mb-16 lg:mb-20">What We Can Offer You</h2>
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:flex lg:flex-row self-center gap-8 lg:gap-5 xl:gap-8 lg:w-full lg:max-w-screen-xl">
+                  <ServiceCardSmall
+                    href="/services#heating"
+                    icon="/icon-heat-small.webp"
+                    label="Heating"
+                    installation={true}
+                    repair={true}
+                  />
+                  <ServiceCardSmall
+                    href="/services#ac"
+                    icon="/icon-ac-small.webp"
+                    label="Air Conditioning"
+                    installation={true}
+                    repair={true}
+                  />
+                  <ServiceCardSmall
+                    href="/services#ducting"
+                    icon="/icon-duct-small.webp"
+                    label="Ducting"
+                    installation={true}
+                    repair={false}
+                  />
+                  <ServiceCardSmall
+                    href="/services#refrigeration"
+                    icon="/icon-fridge-small.webp"
+                    label="Refrigeration & Appliance"
+                    installation={false}
+                    repair={true}
+                  />
+                </div>
+              </div>
+
             </div>
 
 
 
 
-            {/* Services container */}
-            <div className="service-banner-image relative text-white flex flex-col self-center text-center w-full px-4 pt-16 pb-16 lg:pt-20 lg:pb-20">
+            {/* Reviews container */}
+            <div className="service-banner-image relative text-white flex flex-col self-center text-center w-full px-4 pt-16 lg:pt-20 pb-16 lg:pb-20">
               {/* Dark layer */}
               <div className="absolute top-0 left-0 bg-black opacity-20 w-full h-full"></div>
-              {/* Services */}
-              <div className="font-semibold tracking-wider z-10 mb-2">OUR SERVICES</div>
-              <h2 className="self-center text-[33px] xl:text-[45px] font-extrabold leading-tight z-10 mb-16 lg:mb-20">What We Can Offer You</h2>
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:flex lg:flex-row self-center gap-8 lg:w-full lg:max-w-screen-xl">
-                <ServiceCardSmall
-                  href="/services#heating"
-                  icon="/icon-heat.webp"
-                  label="Heating"
-                  installation={true}
-                  repair={true}
-                />
-                <ServiceCardSmall
-                  href="/services#ac"
-                  icon="/icon-ac.webp"
-                  label="Air Conditioning"
-                  installation={true}
-                  repair={true}
-                />
-                <ServiceCardSmall
-                  href="/services#ducting"
-                  icon="/icon-duct.webp"
-                  label="Ducting"
-                  installation={true}
-                  repair={false}
-                />
-                <ServiceCardSmall
-                  href="/services#refrigeration"
-                  icon="/icon-fridge.webp"
-                  label="Refrigeration & Appliance"
-                  installation={false}
-                  repair={true}
-                />
-              </div>
-            </div>
-
-
-
-
-            {/* Second half */}
-            <div className="flex flex-col self-center px-4 max-w-screen-xl my-16 lg:my-36">
-
-              {/* Service map container */}
-              <div className="flex flex-col justify-center mb-16 lg:mb-32"> {/* Smaller bottom border then other containers due to map clipping */}
-                <div className="self-center font-semibold tracking-wider mb-2">PROUDLY SERVING</div>
-                <h2 className="self-center text-center text-[33px] xl:text-[45px] font-extrabold leading-tight mb-16 lg:mb-20">HVAC Solutions Across the Bay Area</h2>
-                <LazyMap />
-              </div>
-
               {/* Reviews container */}
-              <div className="flex flex-col self-center text-center">
+              <div className="flex flex-col self-center text-center max-w-screen-xl z-10">
                 <div className="font-semibold tracking-wider mb-2">OUR REVIEWS</div>
                 <h2 className="self-center text-[33px] xl:text-[45px] font-extrabold leading-tight mb-16 lg:mb-20">What Our Customers Have to Say</h2>
 
@@ -196,6 +184,21 @@ export default function Home() {
                   />
                 </div>
               </div>
+            </div>
+
+
+
+
+            {/* Second half */}
+            <div className="flex flex-col self-center px-4 max-w-screen-xl my-16 lg:my-36">
+
+              {/* Service map container */}
+              <div className="flex flex-col justify-center"> {/* Smaller bottom border then other containers due to map clipping */}
+                <div className="self-center font-semibold tracking-wider mb-2">PROUDLY SERVING</div>
+                <h2 className="self-center text-center text-[33px] xl:text-[45px] font-extrabold leading-tight mb-16 lg:mb-20">HVAC Solutions Across the Bay Area</h2>
+                <LazyMap />
+              </div>
+
             </div>
 
 

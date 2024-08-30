@@ -71,7 +71,7 @@ const EmptyStar = () => (
 
 export default function ReviewCard({ name, quote, stars }: ReviewCardProps) {
     return (
-        <div className="flex flex-col justify-between overflow-auto bg-white w-full h-[330px] rounded-xl shadow-xl px-8 pt-6 pb-4">
+        <div className="flex flex-col justify-between overflow-auto bg-white w-full h-[340px] rounded-xl shadow-xl px-8 pt-9 pb-4">
 
             {/* Customer review */}
             <div className="flex flex-col">
@@ -80,9 +80,9 @@ export default function ReviewCard({ name, quote, stars }: ReviewCardProps) {
                     alt="Quote icon for customer review card"
                     width={50}
                     height={50}
-                    className="self-start w-7 mb-4"
+                    className="self-start w-7 mb-5"
                 />
-                <div className="text-start text-neutral-600 mb-4">{quote}</div>
+                <div className="text-start text-neutral-600 mb-5">{quote}</div>
             </div>
 
             {/* Review card footer - name and stars */}
