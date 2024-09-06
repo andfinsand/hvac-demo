@@ -12,7 +12,7 @@ type ServiceCardSmallProps = {
 export default function ServiceCardSmall({ href, icon, label, installation, repair }: ServiceCardSmallProps) {
     return (
         <>
-            <div className="flex flex-col justify-around relative overflow-hidden bg-gradient-to-tr from-[#1B4BA1] to-[#4896FE] w-full max-w-[300px] h-[370px] rounded-xl shadow-xl -z-0 px-7 pb-5">
+            <div className="group flex flex-col justify-around relative overflow-hidden bg-gradient-to-tr from-[#1B4BA1] to-[#4896FE] w-full max-w-[300px] h-[370px] rounded-xl shadow-xl -z-0 px-7 pb-5">
 
                 {/* Service icon */}
                 <Image
@@ -52,7 +52,7 @@ export default function ServiceCardSmall({ href, icon, label, installation, repa
                     )}
                 </div>
 
-                <div className="absolute bottom-0 right-0 w-0 h-0 border-b-[230px] lg:border-b-[190px] xl:border-b-[240px] border-l-[220px] lg:border-l-[170px] xl:border-l-[200px] border-b-white border-l-transparent -z-10"></div>
+                <div className="absolute bottom-0 right-0 w-0 h-0 border-b-[230px] lg:border-b-[190px] xl:border-b-[240px] border-l-[220px] lg:border-l-[170px] xl:border-l-[200px] border-b-white border-l-transparent -z-10 transition-all duration-300 ease-in-out group-hover:border-b-0 group-hover:border-l-0"></div>
 
 
                 {/* Service page button */}

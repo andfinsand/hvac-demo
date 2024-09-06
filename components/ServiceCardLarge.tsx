@@ -39,9 +39,9 @@ export default function ServiceCardLarge({ id, image, icon, label, content, inst
                                     alt="Icon related to the service"
                                     width={100}
                                     height={100}
-                                    className="self-center w-[15%] lg:w-20"
+                                    className="hidden xl:block self-center w-[15%] lg:w-20"
                                 />
-                                <h2 className="self-center font-extrabold text-2xl xs:text-3xl ml-2">{label}</h2>
+                                <h2 className="self-center font-extrabold text-2xl xs:text-3xl xl:ml-2">{label}</h2>
                             </div>
                             {/* Installation and repair checkmarks */}
                             <div className="flex flex-row self-start xl:self-center gap-3 mr-3">
