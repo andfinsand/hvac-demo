@@ -190,7 +190,7 @@ export default function Home() {
 
 
             {/* Second half */}
-            <div className="flex flex-col self-center px-4 max-w-screen-xl my-16 lg:my-36">
+            <div className="flex flex-col self-center px-4 w-full max-w-screen-2xl my-16 lg:my-36">
 
               {/* Service map container */}
               <div className="flex flex-col justify-center"> {/* Smaller bottom border then other containers due to map clipping */}
