@@ -9,13 +9,13 @@
 }
 
 /* Global styles */
-  body {
+body {
   overflow-x: hidden;
 }
 
 /* Background images */
 .hero-image {
-  background-image: url("/hero-background.webp");
+  background-image: url("/hero-background2.webp");
   background-size: cover;
   background-position: center;
   z-index: -1;
@@ -25,9 +25,18 @@
 }
 
 /* Offset background image for mobile */
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 640px) {
   .hero-image {
-    background-position: 85% center;
+    background-image: url("/hero-background-mobile.webp");
+
+  }
+}
+
+/* Offset background image for mobile */
+@media screen and (max-width: 512px) {
+  .hero-image {
+    background-image: url("/hero-background-mobile2.webp");
+
   }
 }
 
@@ -56,9 +65,11 @@
 /* Change background-attachment from fixed to scroll for iOS */
 @media screen and (max-width: 1023px) {
   .service-banner-image {
-    background-image: url("/banner-service-background-mobile.webp"); /* Added for iOS */
+    background-image: url("/banner-service-background-mobile.webp");
+    /* Added for iOS */
     background-position: 55% center;
-    background-attachment: scroll; /* Added for iOS */
+    background-attachment: scroll;
+    /* Added for iOS */
   }
 }
 
