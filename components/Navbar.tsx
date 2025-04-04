@@ -68,8 +68,8 @@ export default function Navbar() {
                         <Image
                             src="/logo-hvac-example.webp"
                             alt="Company logo"
-                            width={446}
-                            height={91}
+                            width={654}
+                            height={144}
                             priority={true}
                             className="self-center"
                         />

@@ -32,7 +32,7 @@ export default function Home() {
           <div className="flex flex-col self-center">
             {/* Content */}
             <div className="flex flex-col items-center xs:px-16 lg:px-5">
-              <h1 className="text-center lg:text-start text-[36px] md:text-[45px] font-black leading-tight tracking-tight max-w-[480px] mb-10">Your Trusted Bay Area <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-500">HVAC</span> Experts</h1>
+              <h1 className="text-center lg:text-start text-[36px] md:text-[44px] xl:text-[45px] font-black leading-tight tracking-tight max-w-[480px] mb-10">Your Trusted Bay Area <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-500">HVAC</span> Experts</h1>
               {/* Mobile hero image */}
               <Image
                 src="/hero-image.webp"
@@ -42,7 +42,7 @@ export default function Home() {
                 priority={true}
                 className="self-center flex lg:hidden object-cover rounded-full w-80 lg:w-[420px] h-80 lg:h-[420px] mb-12"
               />
-              <p className="text-center lg:text-start text-lg leading-snug max-w-[450px] lg:max-w-[480px] mb-14">Affordable, high-performance HVAC solutions for your home or business with expert heating, cooling, ducting, and refrigeration services.</p>
+              <p className="text-center lg:text-start text-lg font-medium leading-snug max-w-[450px] lg:max-w-[480px] mb-14">Affordable, high-performance HVAC solutions for your home or business with expert heating, cooling, ducting, and refrigeration services.</p>
             </div>
             {/* Buttons */}
             <div className="flex flex-col xs:flex-row self-center lg:self-start gap-3 xs:gap-7 mr-0 px-4">
@@ -60,7 +60,7 @@ export default function Home() {
             width={1600}
             height={1131}
             priority={true}
-            className="self-center hidden lg:flex object-cover rounded-full w-80 lg:w-[420px] h-80 lg:h-[420px]"
+            className="self-center hidden lg:flex object-cover rounded-full w-80 lg:w-[450px] xl:w-[480px] h-80 lg:h-[450px] xl:h-[480px]"
           />
         </div>
 
