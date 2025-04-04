@@ -55,19 +55,18 @@ export default function Navbar() {
         <>
             <nav className="flex justify-center fixed w-full z-50">
                 <div className={`absolute inset-0 transition-transform duration-500 opacity-100 translate-y-0
-                    ${
-                        scrolled
-                            ? 'translate-y-0 opacity-100'
-                            : 'lg:-translate-y-full opacity-0'
+                    ${scrolled
+                        ? 'translate-y-0 opacity-100'
+                        : 'lg:-translate-y-full opacity-0'
                     }
                     bg-[#EEEEEE] bg-opacity-85 backdrop-blur-lg ios-backdrop-blur shadow-lg`}>
                 </div>
                 <div className="flex w-full max-w-screen-xl z-10">
 
                     {/* Logo */}
-                    <Link href="/" className="flex justify-center w-[170px] 2xl:w-[200px] min-w-[120px] min-h-[77px] ml-4">
+                    <Link href="/" className="flex justify-center w-[200px] min-w-[120px] min-h-[66px] sm:min-h-[76px] ml-4">
                         <Image
-                            src="/logo-example-dark.png"
+                            src="/logo-hvac-example.webp"
                             alt="Company logo"
                             width={446}
                             height={91}
