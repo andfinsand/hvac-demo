@@ -35,7 +35,7 @@ export default function Sidebar({ isOpen, setIsOpen }: SidebarProps) {
             {/* Background blur layer */}
             <div
                 onClick={() => setIsOpen(false)}
-                className={`fixed top-[76px] right-0 h-screen bg-black/60 ${isOpen
+                className={`fixed top-[66px] right-0 h-screen bg-black/60 ${isOpen
                     ? "translate-x-0 opacity-100 transition-all duration-300 ease-in-out"
                     : "translate-x-full opacity-0"
                     } w-full z-30 ios-backdrop-blur lg:hidden`}>
@@ -43,7 +43,7 @@ export default function Sidebar({ isOpen, setIsOpen }: SidebarProps) {
 
             {/* Sidebar menu */}
             <div
-                className={`fixed top-[76px] right-0 h-screen bg-white ${isOpen
+                className={`fixed top-[66px] right-0 h-screen bg-white ${isOpen
                     ? "translate-x-0 transition-transform duration-300 ease-in-out"
                     : "translate-x-full"
                     } w-[270px] z-40 lg:hidden`}
