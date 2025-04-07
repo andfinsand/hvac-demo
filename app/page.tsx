@@ -174,12 +174,14 @@ export default function Home() {
               <div className="grid lg:grid-cols-2 self-center gap-8 max-w-xl lg:max-w-full">
                 <ReviewCard
                   name={"John D."}
-                  quote={"I couldn't be happier with the service I received from this HVAC company. When my AC broke down during a heatwave, they responded quickly and had a technician at my door within hours. Fair pricing and excellent customer service make this my go-to for all HVAC needs in the Bay Area."}
+                  // quote={"I couldn't be happier with the service I received from this HVAC company. When my AC broke down during a heatwave, they responded quickly and had a technician at my door within hours. Fair pricing and excellent customer service make this my go-to for all HVAC needs in the Bay Area."}
+                  quote={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."}
                   stars={5}
                 />
                 <ReviewCard
                   name={"Jane D."}
-                  quote={"After getting quotes from several companies, I chose this one to install a new heating system in my home. I'm so glad I did! The team was professional from start to finish. They helped me select an energy-efficient model that fits my budget and home's needs. I highly recommend their services to anyone in need of HVAC work."}
+                  // quote={"After getting quotes from several companies, I chose this one to install a new heating system in my home. I'm so glad I did! The team was professional from start to finish. They helped me select an energy-efficient model that fits my budget and home's needs. I highly recommend their services to anyone in need of HVAC work."}
+                  quote={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."}
                   stars={4.5}
                 />
               </div>
